@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "AutoLogin Extension",
+  "version": "2.0",
+  "description": "Automatically log in to a website",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "favcon1.png",  
+      "48": "favcon1.png",   
+      "128": "favcon1.png"  
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://controller.access.network/101/portal/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

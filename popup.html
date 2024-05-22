@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Settings</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #444;
+      width: 350px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+    }
+    .header {
+      background-color:#555; 
+      padding: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .header img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      position: relative;
+      left: 30px;
+    }
+    .header h1{
+      position: relative;
+      left: 34px;
+    }
+    .form-group {
+      margin-top: 20px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      margin-top: 30px;
+      color: gray;
+      font-size: small;
+      right: 25px;
+    }
+    label{
+      color: #eee;
+    }
+    .inputed{
+      background-color: #555;
+      color: #eee;
+      border-radius: 10px;
+    }
+    .inputed:focus{
+      color: white;
+      background-color: #666;
+      color: #eee;
+
+    }
+    .buttened{
+      width: 100%;
+      height: 60px;
+      background-color: #555555;
+      border: none;
+      border-radius: 10px;
+
+    }
+    .buttened:hover{
+      background-color: #666;
+    }
+    hr{
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="favcon1.png" alt="Logo" class="img-fluid rounded-circle">
+    <h1 class="h3">Auto-login</h1>
+  </div>
+  
+  <form>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control inputed" id="username" placeholder="Enter username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control inputed" id="password" placeholder="Enter password">
+    </div>
+
+    <div class="form-group">
+      <label for="interval">Interval (milliseconds):</label>
+      <input type="number" class="form-control inputed" id="interval" placeholder="Enter interval" value="400">
+    </div>
+    
+    <button type="button" class="btn btn-primary buttened" id="startScript">Start Script</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script src="popup.js"></script>
+  <footer class="footer">by Ech-chaaraoui & Bentaouet</footer>
+</body>
+</html>
